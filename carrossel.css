@@ -1,0 +1,56 @@
+.carrossel{
+    width: 100%;
+    overflow-x:auto ;
+    margin: 0.5em auto 0.5em auto;
+    margin-top: 0.5em;
+    display: flex;
+    gap: 0.5em;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    anchor-name: --carrossel;
+}
+
+.carrossel::-webkit-scrollbar{
+    display: none;
+}
+
+.carrossel::scroll-button(right), .carrossel::scroll-button(left){
+    content: "❯";
+    border: none;
+    background-color: #d9d9d9;
+    font-size: 2.5rem;
+    color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    position-anchor: --carrossel;
+    position-area: right center;
+    translate: -450%;
+}
+
+.carrossel::scroll-button(left){
+    content: "❮";
+    position-area: left center;
+    translate: 450%;
+}
+
+.carrossel::scroll-button(right):disabled, .carrossel.carrossel::scroll-button(left):disabled{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.card{
+    flex: 0 0 50rem;
+    height: 50rem;
+    background-color: transparent;
+    padding: 1em;
+    margin: 0.5rem;
+    border-radius: 8px;
+    scroll-snap-align: center;
+
+}

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.menu {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Poppins;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    border: 10px solid #eeeeee;
+    background-color: #eeeeee;
+    padding: 5px 0;
+    align-items: center;
+
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #545454;
+    transition: all 0.2s ease-in-out
+}
+
+.menu a:hover {
+  text-decoration: underline;  
+}
+
+.menu input[type="text"] {
+  background-color: #d9d9d9;           /* cor de fundo */
+  border: none;                    /* sem borda */
+  border-radius: 20px;              /* cantos arredondados */
+  padding: 10px 40px 10px 40px;     /* espaço interno (mais à esquerda p/ ícone) */
+  font-size: 16px;
+  position: relative;
+  background-image: url('Imagens/Icones/search.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;  /* posição da lupa */
+  background-size: 20px;  
+  display: flex;
+  align-items: center;
+}
+
+.titulo{
+  font-family: Poppins;
+  font-size: 4rem;
+  display: flex;               /* Coloca texto e imagem na mesma linha */
+  align-items: baseline;         /* Alinha verticalmente */
+  gap: 7rem;                   /* Espaço entre o texto e o símbolo */
+}
+
+.titulo h1{
+  margin: 0;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  line-height: 1;
+}
+
+.titulo img{
+  width: 22rem;
+  height: auto;
+}
+
+.conteudo{
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-bottom: 0%;
+    word-spacing: 10px;
+    max-width: 60rem;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.baner{
+  width: 100%;
+  height: 50rem;
+  margin: 0px;
+  overflow: hidden;
+  border: none;
+  overflow-y:hidden;
+}
+
+.baner::-webkit-scrollbar{
+  display: none;
+}
+
+.titulo2{
+  font-family: Poppins;
+  text-align: center;
+  font-size: 2.7rem;
+  margin: 0;
+}
+
+.medalhistas{
+  font-family: 'Opens Sans', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    border: 1px solid #ddd; /* Borda suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+li img:first-of-type {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.medalhistas h2 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.medalhas {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.medalhas div {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    color: black;
+    gap: 10px;
+}
+
+.Ouro{
+  background-color: gold;
+}
+
+.Prata{
+  background-color: silver;
+}
+
+.Bronze{
+  background-color: #d78c43;
+}
+
+.total{
+ font-weight: normal;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  margin-bottom: 10px;  
+  border: 2px solid #bab8b5;
+  border-radius: 6px;
+  padding: 7px;
+}
+
+.ranking{
+  display: flex; /* Alinha os itens na mesma linha */
+   /* Alinha os itens à esquerda */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  gap: 10px;
+}
+
+.medalhas img:last-of-type {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+p{
+    font-style: normal;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+.pais {
+  display: flex;
+  align-items: center; /* alinha verticalmente */
+  gap: 20px; /* espaço entre bandeira e texto */
+  margin-bottom: 12px;
+  justify-content: flex-start;
+}
+
+.pais img {
+  width: 50px;
+  height: 50px;
+}
+
+.atletas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.atletas img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
