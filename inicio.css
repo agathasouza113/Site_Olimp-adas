@@ -103,7 +103,7 @@ body{
   font-family: 'Opens Sans', sans-serif;
   width: 80%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 ol {
@@ -115,7 +115,7 @@ ol {
 li {
     border: 1px solid #ddd; /* Borda suave */
     border-radius: 10px; /* Bordas arredondadas */
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
     background-color: #f9f9f9;
 }
@@ -132,18 +132,24 @@ li img:first-of-type {
     margin-bottom: 10px;
 }
 
+.medalhistas img{
+  width: 40px;
+  height: auto;
+}
+
 .medalhas {
     display: flex;
+    margin-right: 20px;
     margin-bottom: 10px;
     gap: 10px;
 }
 
 .medalhas div {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
+    margin-left: 10rem;
     align-items: center;
     justify-content: center;
     font-weight: normal;
@@ -166,7 +172,7 @@ li img:first-of-type {
 .total{
  font-weight: normal;
   font-size: 1.1rem;
-  margin-left: 10px;
+  margin-left: 5rem;
   margin-bottom: 10px;  
   border: 2px solid #bab8b5;
   border-radius: 6px;
@@ -175,7 +181,6 @@ li img:first-of-type {
 
 .ranking{
   display: flex; /* Alinha os itens na mesma linha */
-   /* Alinha os itens à esquerda */
   align-items: center; /* Alinha os itens verticalmente no centro */
   gap: 10px;
 }
@@ -187,11 +192,15 @@ li img:first-of-type {
     margin-right: 10px;
     margin-top: 10px;
 }
-
-p{
-    font-style: normal;
+.atletas .nome{
     font-size: 1.3rem;
+    font-style: normal;
     color: #000000;
+}
+
+.atletas .modal{
+    font-size: 1rem;
+    color: #545454;
 }
 
 hr {
@@ -217,11 +226,12 @@ hr {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-left: 10rem;
 }
 
 .atletas img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
