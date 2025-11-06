@@ -132,9 +132,17 @@ li img:first-of-type {
     margin-bottom: 10px;
 }
 
-.medalhistas img{
+.iconmedal{
   width: 40px;
   height: auto;
+  margin-left: 66.2rem;
+}
+
+#medalOuro{
+  font-size: 20px;
+  color: gold;
+   -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: goldenrod;
 }
 
 .medalhas {
