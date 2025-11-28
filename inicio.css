@@ -13,7 +13,7 @@ body{
     display: flex;
     gap: 6rem;
     justify-content: center;
-    border: 10px solid #eeeeee;
+    border-bottom: 10px solid #eeeeee;
     background-color: #eeeeee;
     padding: 5px 0;
     align-items: center;
@@ -32,10 +32,10 @@ body{
 }
 
 .menu input[type="text"] {
-  background-color: #d9d9d9;           /* cor de fundo */
-  border: none;                    /* sem borda */
-  border-radius: 20px;              /* cantos arredondados */
-  padding: 10px 40px 10px 40px;     /* espaço interno (mais à esquerda p/ ícone) */
+  background-color: #d9d9d9;           
+  border: none;                    
+  border-radius: 20px;              
+  padding: 10px 40px 10px 40px;    
   font-size: 16px;
   position: relative;
   background-image: url('Imagens/Icones/search.png');
@@ -49,9 +49,9 @@ body{
 .titulo{
   font-family: Poppins;
   font-size: 4rem;
-  display: flex;               /* Coloca texto e imagem na mesma linha */
-  align-items: baseline;         /* Alinha verticalmente */
-  gap: 7rem;                   /* Espaço entre o texto e o símbolo */
+  display: flex;              
+  align-items: baseline;         
+  gap: 7rem;                   
 }
 
 .titulo h1{
@@ -113,8 +113,8 @@ ol {
 }
 
 li {
-    border: 1px solid #ddd; /* Borda suave */
-    border-radius: 10px; /* Bordas arredondadas */
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
     padding: 20px;
     margin-bottom: 20px;
     background-color: #f9f9f9;
@@ -143,10 +143,10 @@ li img:first-of-type {
   justify-content: flex-start;
   align-items: center;
   gap: 7.9rem; /* ajuste fino para alinhar com os círculos */
-  margin-left: 25.2rem; /* alinha com o início dos círculos */
+  margin-left: 28.3rem; /* alinha com o início dos círculos */
   margin-top: 5rem;
-  margin-bottom: 0;      /* sem espaço extra abaixo */
-  line-height: o;        /* remove espaçamento interno do texto */
+  margin-bottom: -3rem;      
+  line-height: o;       
   padding: 0;
 }
 
@@ -275,4 +275,68 @@ hr {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+
+
+footer {
+    background-color: #1f1e1e; 
+    color: #d9d9d9; 
+    font-family: "Open Sans", sans-serif; 
+    padding-top: 20px; 
+    width: 100vw; /*Aqui é pra fazer com que o rodapé fique ocupando 100% da página, porque não estava funcionando com a medida 100%, entçao eu pesquisei e descrobri essa medida "vw" o prpblema dela é que ela desalinha, então ali abaixo eu vou resolver essa tag com essa unidade de medida.*/
+    position: relative;
+    left: calc(-50vw + 49.4%); /*Aqui é pra fazer com que a medida "100vw" não fique desalinhado de acordo com a página, então ele faz com o o elemento fique com o alinhamento central e correto*/
+}
+
+.footer_menu {
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    padding-bottom: 20px; 
+}
+
+
+.footer_icones {
+    display: flex; 
+    justify-content: center; 
+    gap: 70px;     margin-bottom: 30px; 
+}
+
+.footer_icones img {
+    width: 55px; /* Tamanho dos ícones */
+    height: 50px;
+    
+}
+
+
+.footer_links {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 60px; 
+}
+
+.footer_links a {
+    color: #d9d9d9; 
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+.footer_links a:hover {
+    color: #ffffff; 
+}
+
+.footer_copyright {
+    background-color: #000000; 
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 15px; 
+}
+
+.footer_copyright p {
+    margin: 0; 
+    font-size: 17px;
+    color: #d9d9d9;
 }
